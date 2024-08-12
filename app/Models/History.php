@@ -18,4 +18,12 @@ class History extends Model
         'price',
     ];
 
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
+    public function checkout()
+    {
+        return $this->belongsTo(Checkout::class);
+    }
 }
