@@ -14,4 +14,8 @@ class Checkout extends Model
         return $this->belongsTo(Product::class);
     }
 
+    public function history()
+    {
+        return $this->hasMany(History::class);
+    }
 }
