@@ -15,6 +15,7 @@ class History extends Model
         'user_id',
         'product_id',
         'checkout_id',
+        'pembelian_id',
         'price',
     ];
 
@@ -22,8 +23,8 @@ class History extends Model
     {
         return $this->belongsTo(Product::class);
     }
-    public function checkout()
+    public function pembelian()
     {
-        return $this->belongsTo(Checkout::class);
+        return $this->belongsTo(Pembelian::class);
     }
 }
