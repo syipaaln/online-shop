@@ -89,7 +89,7 @@
                 <tr>
                     <td class="center-align">{{$loop->iteration}}</td>
                     <td>{{ $history->product->title ?? 'Produk tidak ditemukan' }}</td>
-                    <td class="center-align">{{ $history->checkout->quantity ?? 'Data tidak ditemukan' }}</td>
+                    <td class="center-align">{{ $history->pembelian->quantity ?? 'Data tidak ditemukan' }}</td>
                     <td class="right-align">Rp {{ number_format($history->price, 0, ',', '.') }}</td>
                 </tr>
             @endforeach
